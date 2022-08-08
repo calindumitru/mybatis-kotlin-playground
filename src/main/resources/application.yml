@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: mybatis-service
+  datasource:
+    #url: jdbc:h2:file:~/test
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        format_sql: true
+
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:db/changelog/changelog.xml
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+  type:
+    descriptor:
+      sql:
+        BasicBinder:TRACE

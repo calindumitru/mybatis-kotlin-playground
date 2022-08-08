@@ -1,0 +1,28 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  "1"
+       author:  calin
+       changes:
+         -  createTable:
+              tableName:  actor
+              columns:
+                -  column:
+                     name:  id
+                     type:  int
+                     autoIncrement:  true
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  name
+                     type:  varchar(50)
+                     constraints:
+                       nullable: false
+                -  column:
+                     name:  gender
+                     type:  enum('M','F','NB')
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  birth_date
+                     type:  date

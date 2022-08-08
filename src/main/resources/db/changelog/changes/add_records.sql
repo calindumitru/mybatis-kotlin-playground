@@ -1,0 +1,1 @@
+INSERT INTO CAR(make, model, construction_year) VALUES ('Opel', 'Astra', 2010)

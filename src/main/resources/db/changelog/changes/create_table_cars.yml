@@ -1,0 +1,28 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  "1"
+       author:  calin
+       changes:
+         -  createTable:
+              tableName:  car
+              columns:
+                -  column:
+                     name:  id
+                     type:  int
+                     autoIncrement:  true
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  make
+                     type:  varchar(50)
+                     constraints:
+                       nullable: false
+                -  column:
+                     name:  model
+                     type:  varchar(50)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  construction_year
+                     type:  smallint
