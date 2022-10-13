@@ -23,7 +23,7 @@ dependencies {
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2")
 	implementation ("org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.4.0")
 	implementation("org.liquibase:liquibase-core")
-	implementation("io.github.microutils:kotlin-logging-jvm:2.1.20")
+	implementation("io.github.microutils:kotlin-logging-jvm:2.1.23")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.testcontainers:junit-jupiter")

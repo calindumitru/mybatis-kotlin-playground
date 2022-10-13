@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Profile
 class CarConfiguration {
     private val log = KotlinLogging.logger {}
 
-
     @Profile("cars")
     @Bean("Cars")
     fun init(carMapper: CarMapper) = CommandLineRunner {

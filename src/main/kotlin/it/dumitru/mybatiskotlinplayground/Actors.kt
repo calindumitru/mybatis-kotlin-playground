@@ -64,7 +64,7 @@ class ActorConfiguration {
         log.info { "=== Verbose ===" }
         actorMapper.count(verboseCount()).let { log.info { "Count: $it" } }
 
-        actorMapper.select(verboseSelect()).forEach{log.info { "VActor: $it" }}
+        actorMapper.select(verboseSelect()).forEach{ log.info { "VActor: $it" }}
     }
 
     private fun verboseCount() = count(id) {
@@ -140,7 +140,6 @@ fun ActorMapper.deleteByName(name_: String) =
     delete {
         where { name isEqualTo name_ }
     }
-
 
 fun ActorMapper.selectMany(completer: SelectCompleter) =
     selectList(this::select, columnList, actor, completer)
